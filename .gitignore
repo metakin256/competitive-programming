@@ -1,0 +1,19 @@
+# Compiled binaries
+*.exe
+*.out
+*.app
+*.o
+*.obj
+
+# Debug files
+*.pdb
+*.ilk
+*.idb
+
+# Temporary inputs / outputs
+temp_*.txt
+*.tmp
+
+# VS / VSCode
+.vs/
+.vscode/
