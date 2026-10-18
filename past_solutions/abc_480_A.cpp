@@ -18,9 +18,15 @@ using str = string;
 
 int main()
 {
-  str s;
-  cin>>s;
-  if(s=="B")cout<<"Y";
-  if(s=="Y")cout<<"R";
-  if(s=="R")cout<<"B";
+    pair<long,long>a,d;
+    for(int i = 0; i < 2;i++){
+        str s;
+        cin>>s;
+        for(int j = 0; j< 2;j++){
+            if(s[j]=='A')a={i,j};
+            if(s[j]=='D')d={i,j};
+        }
+    }
+    if(abs(a.first-d.first)+abs(a.second-d.second)==1)cout<<"Yes";
+    else cout<<"No";
 }
